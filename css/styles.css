@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Base */
+
+body {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.2em; }
+
+img { width: 100%; }
+p { font-weight: 300; font-size: 15px; }
+h2 { font-size : 38px; }
+
+a, a:hover {
+    text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* Header */
+
+.content-wrapper-large {
+	width: 100%;
+	max-width: 1390px;
+	margin: 0 auto;
+}
+
+.content-wrapper-medium {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto }
+
+.fondvideo {
+	z-index: 2;
+  background-color:#00000069;
+  z-index:100;
+  width: 100%;
+  height:100%;
+  position: relative }
+
+.content-logo {
+	text-align: center;
+	background-color: red;
+	z-index: 1000 }
+
+.content-logo img {
+	width: 100%;
+	max-width: 180px
+}
+
+#menu {
+	padding: 20px 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100 }
+
+.mouse {
+	position: absolute;
+	z-index: 10000;
+	width: 22px;
+	height: 42px;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -12px;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	-webkit-animation: intro 1s;
+	animation: intro 1s;
+}
+
+.spinscroll {
+	display: block;
+	width: 3px;
+	height: 3px;
+	margin: 6px auto;
+	border-radius: 4px;
+	background: #fff;
+	-webkit-animation: finger 1s infinite;
+	animation: finger 1s infinite; }
+
+	@-webkit-keyframes intro {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(40px);
+	        transform: translateY(40px);
+	    }
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0);
+	        transform: translateY(0);
+	    }
+	}
+
+	@keyframes intro {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(40px);
+	        transform: translateY(40px);
+	    }
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0);
+	        transform: translateY(0);
+	    }
+	}
+
+	@-webkit-keyframes finger {
+	    0% {
+	        opacity: 1;
+	    }
+	    100% {
+	        opacity: 0;
+	        -webkit-transform: translateY(20px);
+	        transform: translateY(20px);
+	    }
+	}
+
+	@keyframes finger {
+	    0% {
+	        opacity: 1;
+	    }
+	    100% {
+	        opacity: 0;
+	        -webkit-transform: translateY(20px);
+	        transform: translateY(20px);
+	    }
+	}
+
+/* Content */
+
+.fondimage {
+	background-size: cover;
+	background-image: url("../img/4.jpg");
+	height:100%;
+	background-repeat: no-repeat; }
+
+.content-about {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%; }
+
+.content-actor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: auto; }
+
+.fond-actor {
+	background-color: #181818; }
+
+.block-txt {
+	color: white;
+	width:100%;
+	max-width: 445px; }
+
+.title-txt { margin-bottom: 20px; }
+
+.block {
+	display:flex;
+	width:100%;
+	max-width:1024px;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 202px 0; }
+
+.cell-img {
+	width:100%;
+	max-width:150px;
+}
+
+#sliderparent {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 930px;
+ }
+
+.cell {
+	width: 100%;
+	position: absolute;
+	height: inherit;
+	background-image: url('../img/walpaperstrangerthings.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.arrow-next img, .arrow-prev img {
+	max-width: 15px;
+}
+
+.arrow-next { right: -60px; }
+.arrow-prev { left: -60px; }
+
+#sliderparent:hover .arrow-prev {
+    left: 60px;
+    opacity: 1; }
+
+#sliderparent:hover .arrow-next {
+		right: 60px;
+	  opacity: 1; }
+
+.arrow-next, .arrow-prev {
+    position: absolute;
+    font-size: 48px;
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    opacity: 0; }
+
+.cell-element img { max-width: 490px; }
+
+.cell-element h2 { text-align: center; }
+
+.title-element, .texte-element { color: white }
+
+.wrapper-netflix {
+	background-color: black;
+	background-image: url("../img/2.png");
+	background-size: cover;
+	background-position: 50% -270px;
+	height: 100%;
+	background-repeat: no-repeat; }
+
+.content-netflix {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	text-align: center;
+	color: white;
+	height: 100%; }
+
+.call-netflix {
+	line-height: 2.07;
+	padding-bottom: 50px;
+}
+
+.call-netflix h2 {
+	font-size: 23px;
+}
+
+.call-netflix img {
+	width: 150px
+}
+
+/* Responsive */
+
+@media screen and (max-width: 960px) {
+	.content-about {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: 320px) {
+	html { font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+		} }
+
+@media screen and (min-width: 1000px) {
+	html { font-size: 22px; } }
+
+/* Footer */
+
+.wrapper-theend {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-size: cover;
+	background-image: url('../img/sebastian-unrau-sp-p7uuT0tw-unsplash.png');
+	height: 100%;
+}
